@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Геноцид белорусского народа</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <h1>Главная</h1>
+    </header>
+
+    <aside id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">• Главная</a></li>
+
+                <li><a href="Topics/topic1.html">• Тема 1</a></li>
+
+                <li><a href="Topics/topic2.html">• Тема 2</a></li>
+
+                <li><a href="Topics/topic3.html">• Тема 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
+
+        <div class="slides">
+            <div class="slide" id="s1"><img src="Images/first.jpg" alt="Слайд 1"></div>
+            <div class="slide" id="s2"><img src="Images/second.jpg" alt="Слайд 2"></div>
+            <div class="slide" id="s3"><img src="Images/third.jpg" alt="Слайд 3"></div>
+            <div class="slide" id="s4"><img src="Images/fourth.jpg" alt="Слайд 4"></div>
+            <div class="slide" id="s5"><img src="Images/fifth.jpg" alt="Слайд 5"></div>
+        </div>
+
+        <div class="navigation">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+        </div>
+    </div>
+
+    <main>
+        <p>ТЕКСТ...</p>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

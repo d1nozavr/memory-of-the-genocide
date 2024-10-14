@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <title>Германский оккупационный режим</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <h1>Тема 3</h1>
+    </header>
+
+    <aside id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">• Главная</a></li>
+
+                <li><a href="topic1.html">• Тема 1</a></li>
+
+                <li><a href="topic2.html">• Тема 2</a></li>
+
+                <li><a href="topic3.html">• Тема 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <p>ТЕКСТ...</p>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
