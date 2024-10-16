@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!-- type="image/x-icon" -->
 
 <head>
     <meta charset="UTF-8">
@@ -12,25 +11,45 @@
 
 <body>
     <header>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            &#9776;
+        <div class="button" onclick="toggleMenu()"><img src="Images/menu_book.png" draggable="false" alt="Меню">
         </div>
 
         <h1>Главная</h1>
     </header>
 
+    <div class="background"></div>
+
     <aside id="sidebar">
-        <button class="close-btn" onclick="toggleMenu()">✕</button>
+        <button class="button" onclick="toggleMenu()"><img src="Images/cancel.png" draggable="false"
+                alt="Закрыть"></button>
 
         <nav>
             <ul>
                 <li><a href="index.html">• Главная</a></li>
 
-                <li><a href="Topics/topic1.html">• Тема 1</a></li>
+                <li><a href="Topics/topic1.html">• Геноцид белорусского народа в годы немецко-фашистской оккупации
+                        (1941-1944
+                        гг.)</a></li>
 
-                <li><a href="Topics/topic2.html">• Тема 2</a></li>
+                <li><a href="Topics/topic2.html">• Планы нацистской Германии по осуществлению геноцида</a></li>
 
-                <li><a href="Topics/topic3.html">• Тема 3</a></li>
+                <li><a href="Topics/topic3.html">• Германский оккупационный режим</a></li>
+
+                <li><a href="Topics/topic4.html">• Места принудительного содержания и уничтожения населения</a></li>
+
+                <li><a href="Topics/topic5.html">• Карательные операции</a></li>
+
+                <li><a href="Topics/topic6.html">• Насильственный угон на принудительные работы</a></li>
+
+                <li><a href="Topics/topic7.html">• Деятельность коллаборационистских формирований</a></li>
+
+                <li><a href="Topics/topic8.html">• Экономический ущерб, нанесённый немецко-фашистскими оккупантами
+                        БССР</a>
+                </li>
+
+                <li><a href="Topics/topic9.html">• Подвиг белорусского народа</a></li>
+
+                <li><a href="Topics/topic10.html">• Сохранение исторической памяти</a></li>
             </ul>
         </nav>
     </aside>
@@ -43,11 +62,11 @@
         <input type="radio" name="slider" id="slide5">
 
         <div class="slides">
-            <div class="slide" id="s1"><img src="Images/first.jpg" alt="Слайд 1"></div>
-            <div class="slide" id="s2"><img src="Images/second.jpg" alt="Слайд 2"></div>
-            <div class="slide" id="s3"><img src="Images/third.jpg" alt="Слайд 3"></div>
-            <div class="slide" id="s4"><img src="Images/fourth.jpg" alt="Слайд 4"></div>
-            <div class="slide" id="s5"><img src="Images/fifth.jpg" alt="Слайд 5"></div>
+            <div class="slide" id="s1"><img src="Images/first.jpg" draggable="false" alt="Слайд 1"></div>
+            <div class="slide" id="s2"><img src="Images/second.jpg" draggable="false" alt="Слайд 2"></div>
+            <div class="slide" id="s3"><img src="Images/third.jpg" draggable="false" alt="Слайд 3"></div>
+            <div class="slide" id="s4"><img src="Images/fourth.jpg" draggable="false" alt="Слайд 4"></div>
+            <div class="slide" id="s5"><img src="Images/fifth.jpg" draggable="false" alt="Слайд 5"></div>
         </div>
 
         <div class="navigation">
@@ -60,14 +79,52 @@
     </div>
 
     <main>
-        <p>ТЕКСТ...</p>
+        <div>
+            <p>
+                <strong>Геноцид</strong> — это действия, совершаемые с целью уничтожения людей
+                определённой расы,
+                национальности или религии. К таким действиям относятся убийства, причинение телесных повреждений, а
+                также
+                умышленное создание жизненных условий, рассчитанных на полное или частичное физическое уничтожение
+                людей.
+            </p>
+
+            <p>
+                В истории Беларуси геноцид по отношению к белорусскому народу совершали немецко-фашистские оккупанты
+                (гитлеровцы), захватившие территорию страны летом 1941 года. Их действия поддерживались союзниками из
+                Италии, Румынии, Венгрии, Словакии и Финляндии.
+            </p>
+
+            <p>
+                Накануне войны против Советского Союза в Германии был разработан план <strong>«Ост»</strong> (в переводе
+                с
+                немецкого языка — «Восток»). Этот план предусматривал уничтожение еврейского и славянского населения
+                завоёванных территорий. Согласно плану, предполагалось выселить, что фактически означало уничтожить, три
+                четверти населения Беларуси с занимаемой им территории. Оставшуюся четверть планировалось онемечить —
+                заставить отказаться от родного языка, обычаев и культуры, а также использовать в качестве рабов.
+            </p>
+
+            <p style="font-size: 18px;">
+                Цыган и евреев, живших в Беларуси, должно было полностью уничтожить. Все освобождённые от славян земли
+                планировалось заселить немцами и включить в состав Германии.
+            </p>
+
+            <h3>Методы уничтожения мирного населения:</h3>
+
+            <ul>
+                <li>Сжигать деревни вместе с жителями;</li>
+                <li>Расстреливать, вешать и сжигать людей, применять удушающие газовые камеры;</li>
+                <li>Организовывать лагеря смерти — места принудительного содержания мирного населения с невыносимыми
+                    условиями;</li>
+                <li>Забирать у населения продукты питания и скот;</li>
+                <li>Заставлять много и непосильно работать;</li>
+                <li>Распространять эпидемии смертельных болезней;</li>
+                <li>Не оказывать медицинской помощи.</li>
+            </ul>
+        </div>
     </main>
 
-    <script>
-        function toggleMenu() {
-            document.getElementById('sidebar').classList.toggle('active');
-        }
-    </script>
+    <script src="Scripts/script.js"></script>
 
 </body>
 
