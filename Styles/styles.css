@@ -1,191 +1,215 @@
-* {
-    font-family: "Didact Gothic", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Didact+Gothic&family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Wet+Paint&display=swap');
 
 body {
-    user-select: none;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #80deea);
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-
-    background-color: #8d0801;
+body.dictionary {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
 }
 
 header {
-    padding: 15px;
-    display: flex;
-    align-items: center;
-
-    color: #ffe4e1;
-
-    background-color: #8d0801;
-}
-
-header h1 {
-    font-size: 24px;
-}
-
-.button {
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    background: none;
-    border: none;
-    color: #ffe4e1;
-}
-
-.button img {
-    width: 48px;
-    height: 48px;
-    margin-right: 8px;
-}
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background-image: url('../Images/first.jpg');
-    background-size: cover;
-    background-position: center;
-
-    filter: blur(10px);
-    z-index: -1;
-}
-
-aside {
-    position: fixed;
-    left: -500px;
-    top: 0;
-    height: 100%;
-    width: 500px;
-    background-color: #8d0801;
-    transition: left 0.3s ease;
-}
-
-aside.active {
-    left: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 20px;
-}
-
-nav ul li {
-    margin: 15px 0;
-}
-
-nav ul li a {
-    color: #ffe4e1;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    margin-left: 20px;
-    padding: 20px;
-    color: #ffe4e1;
-
+    background-color: #d90429;
+    width: 100%;
+    padding: 10px 0;
     text-align: center;
-}
-
-main div {
-    background-color: #8d0801;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-main div p,
-ul {
-    font-size: 19px;
-}
-
-main div strong {
-    font-size: 23px;
-}
-
-main div h3 {
-    color: #ff645e;
-}
-
-.slider {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    max-width: 600px;
-    margin: 30px auto;
-    overflow: hidden;
-    border: 1px solid #000;
-    border-radius: 20px;
+    z-index: 10;
 }
 
-input[type="radio"] {
+header h2 {
+    color: #edf2f4;
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #edf2f4;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.index .container {
+    text-align: center;
+    background-color: #d90429;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 20px;
+    min-height: 300px;
+    max-width: 800px;
+    overflow: auto;
+}
+
+.index img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.index img:hover {
+    transform: scale(1.05);
+}
+
+.index h1 {
+    color: #edf2f4;
+    margin-top: 20px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.index p {
+    color: #edf2f4;
+    margin-top: 15px;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.index em {
+    font-style: italic;
+    color: #edf2f4;
+    font-weight: bold;
+}
+
+.index .slider {
+    margin: 20px;
+    position: relative;
+    width: 70%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.index .slides {
+    display: flex;
+}
+
+.index .slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.index .slide img {
+    width: 100%;
+    border-radius: 20px;
+    filter: brightness(0.9);
+}
+
+.index button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.index button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+.index .prev {
+    left: 15px;
+}
+
+.index .next {
+    right: 15px;
+}
+
+.index .active {
+    opacity: 1;
+}
+
+.topics main {
+    background: white;
+
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.topics .topic {
+    padding-bottom: 10px;
+}
+
+.topics .topic-item {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.topics .topic-header {
+    cursor: pointer;
+    color: white;
+    background-color: #ef233c;
+    border: 1px solid #2b2d42;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.topics .topic-header:hover {
+    background-color: #d90429;
+}
+
+.topics .topic-content {
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
     display: none;
 }
 
-.slides {
+.dictionary .container {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.slide {
-    min-width: 100%;
-    height: 400px;
+.dictionary .card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 40px);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.dictionary .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-#slide1:checked~.slides {
-    transform: translateX(0);
-}
-
-#slide2:checked~.slides {
-    transform: translateX(-100%);
-}
-
-#slide3:checked~.slides {
-    transform: translateX(-200%);
-}
-
-#slide4:checked~.slides {
-    transform: translateX(-300%);
-}
-
-#slide5:checked~.slides {
-    transform: translateX(-400%);
-}
-
-.navigation {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.navigation label {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #8d0801;
-    border-radius: 50%;
-    display: inline-block;
+.dictionary .card h2 {
     font-size: 24px;
+    margin: 0 0 10px;
 }
 
-input[type="radio"]:checked+.navigation label {
-    background-color: #ff0d00;
+.dictionary .card p {
+    font-size: 16px;
+    color: #555;
 }
