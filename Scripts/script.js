@@ -13,6 +13,11 @@ document.querySelectorAll('.topic-header').forEach(header => {
     });
 });
 
+function showResult() {
+    const resultDiv = document.getElementById("result");
+    resultDiv.textContent = "...! n/10 (n) были сделаны правильно!";
+}
+
 function showSlide(index) {
     slides.forEach((slide) => { slide.style.display = 'none' });
 
