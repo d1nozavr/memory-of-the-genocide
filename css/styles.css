@@ -12,7 +12,7 @@ body {
 header {
     background-color: #d90429;
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -25,8 +25,8 @@ header h2 {
 }
 
 header nav {
-    margin: 10px 0;
-    font-size: 19px;
+    margin: 5px 0;
+    font-size: 20px;
 }
 
 header nav a {
@@ -35,6 +35,61 @@ header nav a {
     color: #edf2f4;
     font-weight: bold;
     transition: color 0.3s;
+}
+
+.index .slider {
+    margin: 20px;
+    position: relative;
+    border: 1px solid #2b2d42;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.index .slides {
+    display: flex;
+}
+
+.index .slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.index .slide img {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+.index .slider button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.index .slider button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+.index .slider .prev {
+    left: 15px;
+}
+
+.index .slider .next {
+    right: 15px;
+}
+
+.index .slider .active {
+    opacity: 1;
 }
 
 .index main {
@@ -63,99 +118,35 @@ header nav a {
     transform: scale(1.05);
 }
 
-.index h1 {
-    color: #edf2f4;
-    margin-top: 20px;
-    font-size: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
 .index p {
     color: #edf2f4;
     margin-top: 15px;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .index em {
-    font-style: italic;
     color: #edf2f4;
     font-weight: bold;
-    font-size: 19px;
-}
-
-.index .slider {
-    margin: 20px;
-    position: relative;
-    border: 1px solid #2b2d42;
-    width: 85%;
-    max-width: 800px;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
-
-.index .slides {
-    display: flex;
-}
-
-.index .slide {
-    min-width: 100%;
-    position: relative;
-}
-
-.index .slide img {
-    width: 100%;
-    transform: scale(1.05);
-    filter: brightness(0.9);
-}
-
-.index button {
-    position: absolute;
-    top: 50%;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #333;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.index button:hover {
-    background-color: rgba(255, 255, 255, 1);
-    transform: scale(1.1);
-}
-
-.index .prev {
-    left: 15px;
-}
-
-.index .next {
-    right: 15px;
-}
-
-.index .active {
-    opacity: 1;
+    font-size: 20px;
 }
 
 .topics main {
-    background: white;
-    max-width: 850px;
+    background: #edf2f4;
+    min-height: 300px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .topics .topic {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .topics .topic-header {
     cursor: pointer;
-    color: white;
+    color: #edf2f4;
     background-color: #ef233c;
     border: 1px solid #2b2d42;
     font-size: 20px;
@@ -191,7 +182,7 @@ header nav a {
     border-radius: 5px;
     text-align: center;
     max-width: 850px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .topics .letter h1 {
@@ -201,7 +192,7 @@ header nav a {
 
 .topics .letter p {
     margin: 10px 0 0;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .dictionary main {
@@ -215,28 +206,29 @@ header nav a {
     border: 1px solid #2b2d42;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 30px;
-    padding: 20px;
-    width: 75%;
+    margin: 25px;
+    padding: 25px;
+    width: 500px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .dictionary .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2.5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .dictionary .card h2 {
-    color: white;
+    color: #edf2f4;
     font-size: 24px;
-    margin: 0px;
+    margin: 0;
 }
 
 .dictionary .card p {
-    font-size: 22px;
-    color: white;
+    font-size: 20px;
+    color: #edf2f4;
 }
 
 .dictionary .card sup {
     user-select: none; 
+    color: #edf2f4;
 }
